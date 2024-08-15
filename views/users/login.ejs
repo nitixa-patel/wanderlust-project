@@ -1,0 +1,53 @@
+ <%- layout("/layouts/boilerplate") %>
+
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-4">
+                <div class="card text-black" style="border-radius: 25px; padding: 2rem;">
+                    <div class="card-body">
+                        <p class="text-center h2 fw-bold mb-4">Log in to Wanderlust</p>
+
+                        <form action="/login" method="POST">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input
+                                    name="username"
+                                    id="username"
+                                    type="text"
+                                    class="form-control"
+                                    required
+                                >
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input
+                                    name="password"
+                                    id="password"
+                                    type="password"
+                                    class="form-control"
+                                    required
+                                >
+                            </div>
+
+                            <button class="btn btn-success">Log In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 d-flex align-items-center">
+                <img
+                    src="https://img.pikbest.com/png-images/20190919/national-day-travel-girl-suitcase-drawing-animated-gif-element_2676558.png!bw700"
+                    class="img-fluid"
+                    alt="Sample image"
+                    style="max-width: 100%; height: auto;"
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
